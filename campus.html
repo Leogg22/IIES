@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header id="header" class="grid grid-cols-10 container mx-auto mb-6"><!-- Cuadricula con 10 columnas con Tailwind-->
+        <!-- mx-auto para que se centre en medio -->
+        <!-- logo -->
+        <div class="col-span-3">
+            <a href="/"><img src="/img/logo.png" alt="Logo del IIES" class="logo"></a>
+        </div>
+        <!-- Menu -->
+        <div class="col-span-7">
+            <nav class="flex justify-end menu">
+                <!-- flex: viene de flex box, propiedad que viene de css y permite poner elementos uno al lado del otro-->
+                <ul class="flex">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/servicios.html">Nuestro Servicios</a></li>
+                    <li><a href="/campus.html" class="selected">Campus</a></li>
+                    <li><a href="/contactenos.html">Contactenos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- menu -->
+        <h1>Instituto Internacional de Estudios Superiores</h1>
+    </header>
+    <div id="banner" class="container mx-auto mb-8">
+        <!-- Lo mismo de contener y centrar, se usan puras clases con el Tailwind-->
+        <img src="img/campus.png" alt="" class="campus">
+    </div>
+    <div class="container mx-auto grid grid-cols-4 gap-8 mb-8">
+        <main id="main" class="col-span-3">
+            <h1 class="title">CAMPUS</h1>
+            <p>
+                Nuestro campus es el epicentro de innovación y seguridad. Un espacio moderno donde la creatividad de tus
+                hijos florece. Con aulas equipadas y entornos verdes, ofrecemos un ambiente estimulante que inspira
+                confianza. ¡Aquí, cada rincón es una oportunidad para crecer y aprender! 🌟📚</p>
+        </main>
+        <aside>
+            <h2 class="subtitle">Siguenos en redes</h2>
+            <div class="flex social">
+                <a href="https://www.instagram.com/iiesprepa/" target="_blank"><img src="/img/instagram.png"
+                        alt="Logo de instagram"></a><!-- Logos imagen y el link de las redes...-->
+                <a href="https://www.tiktok.com/@iiesprepa" target="_blank"><img src="/img/tik-tok.png" alt="Logo de tiktok"></a>
+                <a href="https://www.facebook.com/search/top?q=iies%20preparatoria" target="_blank"><img src="/img/facebook.png"
+                        alt="Logo de facebook"></a>
+            </div>
+        </aside>
+    </div>
+    <footer id="footer" class="">
+        <p>Instituto Internacional de Estudios Superiores <br>
+            Av. T. Garza Zamora 1700, Col. El Circulo, Reynosa, Tam. | Tel: (899) 262-3300 </p>
+    </footer>
+</body>
+
+</html>
